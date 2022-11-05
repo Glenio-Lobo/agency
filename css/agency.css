@@ -16,8 +16,7 @@ a {
   text-decoration: none;
   transition: 0.5s;
 }
-
-a:visited {
+a:link, a:visited {
   color: white;
 }
 
