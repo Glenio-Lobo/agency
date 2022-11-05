@@ -1,0 +1,56 @@
+@use '../1-Base/variables' as var;
+@use '../3-Modules/botoes' as botao;
+@use '../3-Modules/breakpoints' as bk;
+
+.logo {
+    font-size: clamp(1.8rem, 2.5vw, 3rem);
+    margin-left: 2.5rem;
+    &__title{
+        display: inline;
+        color: var.$color--white;
+    }
+}
+
+.navbar {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 400;
+    &__link {
+        color: var.$color--white;
+
+        &:hover{
+            color: var.$color--orange;
+        }
+    }
+
+    &__link, &__btn {
+        margin: 6px;
+    }
+
+    &__btn:last-of-type{
+        border: 1px solid var.$color--white;
+        color: var.$color--white;
+        background-color: transparent;
+        margin-right: 2.1875rem;
+
+        &:hover {
+            color: var.$color--orange;
+            border: 1px solid var.$color--orange;
+        }
+    }
+
+    .fa-solid.fa-bars {
+        display: none;
+    }
+
+    @include bk.breakpoint(low){
+        &__link, &__btn {
+            display: none;
+        }
+
+        .fa-solid.fa-bars {
+            display: block;
+            font-size: 2.1rem;
+            padding-right: 50px;
+        }
+    }
+}

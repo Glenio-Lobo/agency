@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: fixed;
+  z-index: 1;
+  top: -1;
+  height: 13%;
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(/Udemy/Sass+Projetos/Agency/img/office.jpg);
+  background-size: cover;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 30px 60px 30px;
+  background-color: rgb(24, 23, 23);
+  color: white;
+}/*# sourceMappingURL=layout.css.map */

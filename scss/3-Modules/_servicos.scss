@@ -1,0 +1,39 @@
+@use '../1-Base/variables' as var;
+@use '../3-Modules/mixins' as mix;
+@use '../3-Modules/placeholder' as place;
+
+.servicos{
+    &__title{
+        @extend %section-title;
+    }
+
+    &__cards {
+        @include mix.flex-mixin(row, space-evenly, center);
+        flex-wrap: wrap;
+
+        .cards {
+            height: 380px;
+            width: 370px;
+            border: 1px solid var.$color--light-gray;
+            margin-bottom: 40px;
+            text-align: center;
+            transition: 0.5s;
+
+            &__description {
+                color: var.$color--light-gray;
+                margin: 15px 20px 0px 20px;
+                font-size: 1.2rem;
+            }
+
+            .fa-solid{
+                color: var.$color--orange;
+                font-size: 3.7rem;
+                margin: 50px 0px 30px 0px;
+            }
+
+            &:hover {
+                box-shadow: 1px 1px 10px var.$color--light-gray;
+            }
+        }
+    }
+}

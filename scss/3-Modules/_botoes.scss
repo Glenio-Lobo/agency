@@ -1,0 +1,15 @@
+@use '../1-Base/variables' as var;
+
+.btn {
+    text-transform: uppercase;
+    background-color: var.$color--orange;
+    border: 1px solid var.$color--orange;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: 0.5s;
+    
+    &:hover {
+        background-color: transparent;
+        color: var.$color--orange;
+    }
+}

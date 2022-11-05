@@ -1,0 +1,29 @@
+@use '../1-Base/variables' as var;
+@use '../3-Modules/mixins' as mix;
+// header
+
+.header {
+    @include mix.flex-mixin(row, space-between, center);
+    background-color: var.$color--black;
+    color: var.$color--white;
+    position: fixed;
+    z-index: 1;
+    top: -1;
+    height: 13%;
+    width: 100%;
+}
+
+.home {
+    @include mix.flex-mixin(column, center, center);
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../img/office.jpg');
+    background-size: cover;
+}
+
+
+.footer {
+    @include mix.flex-mixin(row, space-between);
+    padding: 40px 30px 60px 30px;
+    background-color: var.$color--heavy-gray;
+    color: var.$color--white;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="../Agency/css/agency.css">
+    <title>Agency - 1 Projeto SCSS</title>
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Fim das Fontes do Google -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- End Font Awesome -->
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <i class="fa-solid fa-brain"></i>
+            <p class="logo__title">Agency</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="navbar__link">Home</a>
+            <a href="#servicos" class="navbar__link">Serviços</a>
+            <a href="#contato" class="navbar__link">Contato</a>
+            <a href="#" class="btn navbar__btn">Entrar</a>
+            <a href="#" class="btn navbar__btn">Registrar</a>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <section class="home" id="home">
+            <h1 class="home__title">
+                Nós desenvolvemos <span class="home__span">Poderosas Experiências</span>
+            </h1>
+            <a href="" class="btn home__btn">FAZER ORÇAMENTO</a>
+        </section>
+
+        <section id="servicos" class="servicos">
+            <h1 class="servicos__title">O que fazemos</h1>
+
+            <div class="servicos__cards">
+                <div class="cards">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2 class="cards__title">Desenvolvimento Full Stack</h2>
+                    <p class="cards__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, 
+                        earum magni temporibus eos rerum quo dolorum nemo quae doloribus doloremque 
+                        perferendis est assumenda natus ab beatae. Voluptatibus sint repellat harum.</p>
+                </div>
+    
+                <div class="cards">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <h2 class="cards__title">Sites Leves e Rápidos</h2>
+                    <p class="cards__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, 
+                        earum magni temporibus eos rerum quo dolorum nemo quae doloribus doloremque 
+                        perferendis est assumenda natus ab beatae. Voluptatibus sint repellat harum.</p>
+                </div>
+    
+                <div class="cards">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                    <h2 class="cards__title">E-commerce</h2>
+                    <p class="cards__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, 
+                        earum magni temporibus eos rerum quo dolorum nemo quae doloribus doloremque 
+                        perferendis est assumenda natus ab beatae. Voluptatibus sint repellat harum.</p>
+                </div>
+    
+                <div class="cards">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <h2 class="cards__title">SEO</h2>
+                    <p class="cards__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, 
+                        earum magni temporibus eos rerum quo dolorum nemo quae doloribus doloremque 
+                        perferendis est assumenda natus ab beatae. Voluptatibus sint repellat harum.</p>
+                </div>
+    
+                <div class="cards">
+                    <i class="fa-solid fa-chess-pawn"></i>
+                    <h2 class="cards__title">Estratégias de Marketing</h2>
+                    <p class="cards__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, 
+                        earum magni temporibus eos rerum quo dolorum nemo quae doloribus doloremque 
+                        perferendis est assumenda natus ab beatae. Voluptatibus sint repellat harum.</p>
+                </div>
+                
+                <div class="cards">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2 class="cards__title">Hospedagem AWS/Azure</h2>
+                    <p class="cards__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, 
+                        earum magni temporibus eos rerum quo dolorum nemo quae doloribus doloremque 
+                        perferendis est assumenda natus ab beatae. Voluptatibus sint repellat harum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trabalho">
+            <h1 class="trabalho__title">Alguns dos nossos trabalhos</h1>
+
+            <div class="trabalho__projetos">
+                <div class="projeto projeto--img-1">
+                    <h2 class="projeto__title">Projeto 1</h2>
+                    <p class="projeto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quibusdam adipisci saepe nisi repellendus sit unde, natus eius, 
+                        consequatur nostrum doloribus itaque vel ipsum! Eaque perferendis quos dignissimos quasi soluta 
+                        odio.</p>
+                </div>
+    
+                <div class="projeto projeto--img-2">
+                    <h2 class="projeto__title">Projeto 2</h2>
+                    <p class="projeto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quibusdam adipisci saepe nisi repellendus sit unde, natus eius, 
+                        consequatur nostrum doloribus itaque vel ipsum! Eaque perferendis quos dignissimos quasi soluta 
+                        odio.</p>
+                </div>
+    
+                <div class="projeto projeto--img-3">
+                    <h2 class="projeto__title">Projeto 3</h2>
+                    <p class="projeto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quibusdam adipisci saepe nisi repellendus sit unde, natus eius, 
+                        consequatur nostrum doloribus itaque vel ipsum! Eaque perferendis quos dignissimos quasi soluta 
+                        odio.</p>
+                </div>
+    
+                <div class="projeto projeto--img-4">
+                    <h2 class="projeto__title">Projeto 4</h2>
+                    <p class="projeto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quibusdam adipisci saepe nisi repellendus sit unde, natus eius, 
+                        consequatur nostrum doloribus itaque vel ipsum! Eaque perferendis quos dignissimos quasi soluta 
+                        odio.</p>
+                </div>
+    
+                <div class="projeto projeto--img-5">
+                    <h2 class="projeto__title">Projeto 5</h2>
+                    <p class="projeto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quibusdam adipisci saepe nisi repellendus sit unde, natus eius, 
+                        consequatur nostrum doloribus itaque vel ipsum! Eaque perferendis quos dignissimos quasi soluta 
+                        odio.</p>
+                </div>
+            </div>       
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="agency">
+            <h3 class="agency__title">Agency</h3>
+            <p class="agency__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Corporis itaque assumenda odit culpa error accusamus libero ipsa consequatur 
+                doloremque eveniet? Ex explicabo odit distinctio at? Necessitatibus expedita magnam cum 
+                molestias?</p>
+            
+            <div class="copyright">
+                <p class="copyright__title">
+                        &copy; Agency <span class="copyright__span">A melhor agência web para os seus projetos</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="links-wrapper">
+            <div class="links">
+                <h3 class="links__title">Links</h3>
+                <a href="#" class="links__archors">Base de Conhecimento</a>
+                <a href="#" class="links__archors">Trabalhe Conosco</a>
+                <a href="#" class="links__archors">Últimos Projetos</a>
+                <a href="#" class="links__archors">Política de privacidade</a>
+                <a href="#" class="links__archors">Contato</a>
+            </div>
+    
+            <div class="links">
+                <h3 class="links__title">Links</h3>
+                <a href="#" class="links__archors">Base de Conhecimento</a>
+                <a href="#" class="links__archors">Trabalhe Conosco</a>
+                <a href="#" class="links__archors">Últimos Projetos</a>
+                <a href="#" class="links__archors">Política de privacidade</a>
+                <a href="#" class="links__archors">Contato</a>
+            </div>
+    
+            <div class="links">
+                <h3 class="links__title">Links</h3>
+                <a href="#" class="links__archors">Base de Conhecimento</a>
+                <a href="#" class="links__archors">Trabalhe Conosco</a>
+                <a href="#" class="links__archors">Últimos Projetos</a>
+                <a href="#" class="links__archors">Política de privacidade</a>
+                <a href="#" class="links__archors">Contato</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

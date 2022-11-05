@@ -1,0 +1,8 @@
+// Flex mixin
+
+@mixin flex-mixin($direction: row, $main-axis: flex-start, $cross-axis: flex-start){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+}

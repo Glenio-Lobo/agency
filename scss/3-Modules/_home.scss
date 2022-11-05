@@ -1,0 +1,23 @@
+@use '../1-Base/variables' as var;
+
+.home {
+    &__title{
+        text-align: center;
+        color: var.$color--white;
+        font-size: clamp(3rem, 4vw, 5rem);
+        text-shadow: 3px 1px var.$color--black;
+    }
+
+    &__span{
+        font-size: clamp(3.5rem, 6vw, 5rem);
+        display: block;
+    }
+
+    &__btn {
+        font-weight: 700;
+        margin-top: 30px;
+        font-size: 1.1rem;
+        padding: 15px 30px;
+        border-radius: 30px;
+    }
+}
